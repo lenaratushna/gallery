@@ -9,10 +9,6 @@ const sliderMain = new Swiper('.slider_main', {
             spaceBetween: 20,
             
         },
-        321: {
-            slidesPerView: 2.5,
-            spaceBetween: 30,
-        },
         992: {
             centeredSlides: true,
             slidesPerView: 2.5,
@@ -34,10 +30,6 @@ const sliderBg = new Swiper('.slider_bg', {
             slidesPerView: 1.5,
             spaceBetween: 20,
             
-        },
-        321: {
-            slidesPerView: 2.5,
-            spaceBetween: 30,
         },
         992: {
             slidesPerView: 2.5,
