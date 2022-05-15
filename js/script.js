@@ -2,7 +2,7 @@ const sliderMain = new Swiper('.slider_main', {
     freeMode: true,
     mousewheel: true,
     parallax: true,
-    centeredSlides: false,
+    centeredSlides: true,
     breakpoints: {
         0: {
             slidesPerView: 1.5,
@@ -10,12 +10,10 @@ const sliderMain = new Swiper('.slider_main', {
             
         },
         992: {
-            centeredSlides: true,
             slidesPerView: 2.5,
             spaceBetween: 50,
         },
         1199: {
-            centeredSlides: true,
             slidesPerView: 3.5,
             spaceBetween: 60,
         }
@@ -55,4 +53,4 @@ if(window.innerWidth > 991) {
     sliderMain.on('snapIndexChange', () => {
         sliderMain.activeIndex > 0 ? desc.classList.add('hidden') : desc.classList.remove('hidden');
     });
-}
+};
